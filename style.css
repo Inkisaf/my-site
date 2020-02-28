@@ -63,6 +63,8 @@ ul.menu.touch li a.contacts {
 }
 
 .intro {
+  max-width: 1024;
+  width: 100%;
   margin-top: 25px;
   display: flex;
   justify-content: flex-end; /*Выравнивание по правой стороне*/
@@ -76,21 +78,22 @@ ul.menu.touch li a.contacts {
 
 .intro-text {
   font-size: 62px;
-  position: absolute; /*Устанавливает способ позиционирования элемента относительно окна браузера или других объектов на веб-странице. absolute=отсчет координат ведется от края родительского элемента*/
-  right: 750px;
-  top: 220px;
+  position: relative; /*Устанавливает способ позиционирования элемента относительно окна браузера или других объектов на веб-странице. absolute=отсчет координат ведется от края родительского элемента*/
+  right: 100px;
+  top: 230px;
   color: rgb(0, 0, 0);
 }
 
 .intro-contacts {
   background: rgb(0, 255, 255);
   max-width: 590px;
-  position: absolute;
-  right: 133px;
-  top: 570px;
+  width: 100%;
+  max-height: 50px;
   display: flex;
   justify-content: space-between; /*Флексы равномерно распределяются по всей строке. Первый и последний элемент прижимаются к соответствующим краям контейнера*/
   padding: 30px 50px;
+  position: absolute;
+  top: 570px;
 }
 
 .intro-contacts i {
@@ -105,6 +108,65 @@ ul.menu.touch li a.contacts {
 
 div.intro-contacts .intro-contacts-p {
   margin-right: 15px;
+}
+
+.stats {
+  display: flex;
+  margin-top: 130px;
+  max-width: 1024px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.stats-line {
+  display: flex;
+}
+
+.stats-text {
+  padding: 40px;
+}
+
+.stats-text h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.stats-text p {
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 27px;
+  
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(245, 245, 245);
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stats-square {
+  font-size: 40px;
+  color: rgb(0, 255, 255);
+  margin-bottom: 20px;
+}
+
+.apartments {
+  background-color: rgb(245, 245, 245);
+  padding: 60px 0;
+}
+
+.apart h2{
+  margin-bottom: 85px;
+  font-size: 40px;
+}
+
+.card {
+  max-width: 348px;
 }
 
 @media screen and (max-width: 765px) {
@@ -182,6 +244,7 @@ div.intro-contacts .intro-contacts-p {
 }
 
   .intro-contacts {
+    max-width: 765px;
     position: relative; /*Положение элемента устанавливается относительно его исходного места */
     right: 0px;
     top: -58px;
@@ -201,5 +264,32 @@ div.intro-contacts .intro-contacts-p {
     margin-right: 0 10px;
   }
 
+  .stats-num {
+    display: flex;
+    justify-content: center;
+  }
+
+  .stats {
+    margin-top: 0px;
+    flex-direction: column;
+  }
+      
+  .stats-text h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  
+  .stats-text p {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .square{
+    width: 150px;
+    height: 150px;
+    margin: 10px 10px;
+  }
   
 }
+
