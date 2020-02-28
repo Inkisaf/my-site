@@ -155,19 +155,71 @@ div.intro-contacts .intro-contacts-p {
   margin-bottom: 20px;
 }
 
+.stats-num{
+
+}
+
+
 .apartments {
   background-color: rgb(245, 245, 245);
   padding: 60px 0;
 }
 
+.apart {
+
+}
+
 .apart h2{
   margin-bottom: 85px;
   font-size: 40px;
+  padding-left: 80px;
 }
 
 .card {
   max-width: 348px;
+  background-color: #fff;
+  box-shadow: 0 0 10px black;
 }
+
+.card-container {
+  font-size: 15px;
+  height: 55px;
+  padding: 10px;
+}
+
+.card-container p{
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.card-info {
+  display: flex;
+}
+
+.money {
+  color: rgb(0, 255, 255);
+  margin-right: 120px;
+  padding-left: 20px;
+}
+
+.info span{
+  padding: 10px;
+}
+
+span i {
+  font-weight: bolder;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
 
 @media screen and (max-width: 765px) {
   /*Адаптив для экрана меньше 765 пикселей*/
